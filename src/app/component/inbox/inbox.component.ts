@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InboxService } from './services/inbox.service';
 import { InboxModel } from './models/inbox.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inbox',
@@ -9,28 +10,28 @@ import { InboxModel } from './models/inbox.model';
 })
 export class InboxComponent implements OnInit {
 
-  inboxData : InboxModel;
+  inboxData: InboxModel;
 
-  isCollapse : boolean = true;
+  isCollapse: boolean = true;
 
-  constructor(private inboxService : InboxService) { }
+  constructor(private inboxService: InboxService, private router: Router) { }
 
   ngOnInit() {
 
     this.inboxData = new InboxModel();
 
     this.inboxData.clear(); //init data
-  
+
     this.getData();
   }
 
-  getData(){
+  getData() {
     this.inboxService.getAllInboxData().subscribe(res => {
       this.inboxData = res;
     })
   }
 
-  setCollapse(){
+  setCollapse() {
     this.isCollapse = !this.isCollapse;
   }
 
