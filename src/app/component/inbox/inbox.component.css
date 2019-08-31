@@ -1,0 +1,60 @@
+button {
+  text-align: left;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.content {
+  text-align: left;
+  height: 90vh;
+  overflow-y : auto;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.subject , .body{
+  font-size: 11px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+white-space: nowrap;
+}
+
+.body{
+  color: grey;
+}
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+mat-icon{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-left {
+  float: left;
+}
+
