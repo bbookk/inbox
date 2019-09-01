@@ -1,0 +1,12 @@
+
+<h1 mat-dialog-title><strong>From : </strong> {{inboxData.from.email}}</h1>
+
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+  <div><strong>Name : </strong> {{inboxData.from.name}}</div>
+  <div><strong>Subject : </strong> {{inboxData.subject}}</div>
+  <div><strong>Body : </strong> {{inboxData.body}}</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</div>

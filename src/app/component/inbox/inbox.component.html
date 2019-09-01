@@ -14,7 +14,8 @@
 
 <div class="content" *ngIf="isCollapse">
     <div *ngFor="let item of inboxData; let i =index;">
-        <button mat-raised-button>
+        <button mat-raised-button (click)="viewInfo(item)">
+            <img src="../../../assets/profile.png">
             <div class="name">{{item.from.name}}</div>
             <div class="subject">{{item.subject}}</div>
             <div class="body">{{item.body}}</div>

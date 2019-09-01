@@ -1,0 +1,9 @@
+.mat-dialog-actions{
+float: right;
+}
+
+.mat-dialog-content{
+    line-height: 3em;
+    font-size: 14px;
+}
+
